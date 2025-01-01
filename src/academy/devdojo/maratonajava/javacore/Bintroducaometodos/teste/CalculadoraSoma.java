@@ -10,5 +10,8 @@ public class CalculadoraSoma {
 
         calculadora.subtrairDoisNumeros();
 
+        System.out.println("Hello world");
+
+
     }
 }
