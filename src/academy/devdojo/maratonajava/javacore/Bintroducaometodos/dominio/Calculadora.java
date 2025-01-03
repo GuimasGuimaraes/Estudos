@@ -33,12 +33,23 @@ public class Calculadora {
     }
 
     public void somaArray(int[] numeros) {
-        int soma = 0;
-        for (int num : numeros) {
-            soma += num;
-        }
-        System.out.println(soma);
     }
+
+    public class ArrayUtils {
+
+        public int somaArray(int[] numeros) {
+            if (numeros == null || numeros.length == 0) {
+                System.out.println("Array vazio ou nulo.");
+                return 0;
+            }
+
+            // Usando Java Streams para maior clareza
+            int soma = java.util.Arrays.stream(numeros).sum();
+
+            return soma;
+        }
+    }
+
 
     public void somaVarArgs(int... numeros) { // Se tiver mais de um atributo o VarArgs tem que ser o último
         int soma = 0;
