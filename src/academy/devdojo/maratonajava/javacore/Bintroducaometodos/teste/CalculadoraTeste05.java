@@ -11,7 +11,8 @@ public class CalculadoraTeste05 {
 
         calculadora.somaArray(numeros);
 
-        calculadora.somaVarArgs(2,6,8,7,9,147,65,987,541);
+//      System.out.println(calculadora.divideDoisNumeros(200,0));
+        calculadora.imprimiDivisaoDoisNumeros(200,2);
 
     }
 }
