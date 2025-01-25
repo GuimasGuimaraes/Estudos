@@ -10,6 +10,8 @@ public class AnimeTeste01 {
             System.out.print(episodio + " ");
         }
 
+        System.out.println("Testando");
+
 
     }
 }
