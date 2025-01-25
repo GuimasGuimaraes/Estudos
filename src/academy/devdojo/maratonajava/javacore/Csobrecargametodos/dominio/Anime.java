@@ -28,6 +28,12 @@ public class Anime {
         System.out.println(this.genero);
     }
 
+    // Construtor não pode ter nenhum tipo de retorno;
+    // se não definir um construtor na classe o java adiciona um na compilação.
+    public Anime(){
+
+    }
+
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
