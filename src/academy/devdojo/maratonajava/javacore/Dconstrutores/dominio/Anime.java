@@ -6,6 +6,7 @@ public class Anime {
     private int episodios;
     private String genero;
     private int anoLancamento;
+    private String estudio;
 
     // inicializando um objeto sem o init
     public Anime(String nome, String tipo, int episodios, String genero, int anoLancamento) {
@@ -16,9 +17,12 @@ public class Anime {
         this.anoLancamento = anoLancamento;
     }
 
-    public Anime(){
-
+    public Anime(String nome, String tipo, int episodios, String genero, int anoLancamento, String estudio) {
+        this(nome, tipo, episodios, genero, anoLancamento);
+        this.estudio = estudio;
     }
+
+
 
 
     public void imprimir(){
@@ -27,6 +31,7 @@ public class Anime {
         System.out.println(this.episodios);
         System.out.println(this.genero);
         System.out.println(this.anoLancamento);
+        System.out.println(this.estudio);
     }
 
 
