@@ -4,9 +4,10 @@ import static java.lang.System.*;
 
 public class Funcionario {
 
-    public String nome;
-    public int idade;
-    public double[] salarios;
+    private String nome;
+    private int idade;
+    private double[] salarios;
+
 
     public void imprime() {
         out.println(this.nome);
@@ -28,4 +29,35 @@ public class Funcionario {
 
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
+    public void setMedia(double media) {
+        this.media = media;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public double[] getSalarios() {
+        return salarios;
+    }
+
+    public double getMedia() {
+        return media;
+    }
 }
