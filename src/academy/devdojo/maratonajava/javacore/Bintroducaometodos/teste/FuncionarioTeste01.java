@@ -9,6 +9,7 @@ public class FuncionarioTeste01 {
         funcionario01.setNome("Guilherme");
         funcionario01.setIdade(28);
         funcionario01.setSalarios(new double[]{1800, 2421, 4741});
+        funcionario01.setMedia(2000);
 
         funcionario01.imprime();
 
