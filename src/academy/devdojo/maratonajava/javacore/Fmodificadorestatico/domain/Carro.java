@@ -9,7 +9,7 @@ public class Carro {
     private double velocidadeMaxima;
 
     // inserindo a palavra static quando tiver alterações todos os objetos serão alterados.
-    public static double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
 
     public Carro(String nome, double velocidadeMaxima, double velocidadeLimite) {
         this.nome = nome;
@@ -17,14 +17,25 @@ public class Carro {
         this.velocidadeLimite = velocidadeLimite;
     }
 
-    public void imprime(){
+    public void imprime() {
         System.out.println("-----------------");
         System.out.println("Nome " + this.nome);
         System.out.println("Nome " + Carro.velocidadeLimite);
         System.out.println("Nome " + this.velocidadeMaxima);
+    }
 
+    // Dentro do metodo static não existe this, o mesmo faz referência a instância.
+    public static void setVelocidadeLimite(double velocidadeLimite) {
+        Carro.velocidadeLimite = velocidadeLimite;
 
     }
+
+    // metodos static não pode acessar variaveis de instância. pq existe a possibilidade de não existir o objeto em memoria.
+    public static double getVelocidadeLimite(){
+        return Carro.velocidadeLimite;
+    }
+
+
     public String getNome() {
         return nome;
     }
