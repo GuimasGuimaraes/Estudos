@@ -20,8 +20,8 @@ public class Carro {
     public void imprime() {
         System.out.println("-----------------");
         System.out.println("Nome " + this.nome);
-        System.out.println("Nome " + Carro.velocidadeLimite);
         System.out.println("Nome " + this.velocidadeMaxima);
+        System.out.println("Nome " + Carro.velocidadeLimite);
     }
 
     // Dentro do metodo static não existe this, o mesmo faz referência a instância.
