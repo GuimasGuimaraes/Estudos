@@ -9,5 +9,5 @@ public class UtilitarioTesteSoma {
 
         System.out.println("Resultado: " + resultado);
     }
-    
+
 }
