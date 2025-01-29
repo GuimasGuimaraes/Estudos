@@ -9,8 +9,9 @@ public class JogadorTeste01 {
         Jogador jogador3 = new Jogador("CR7");
         Jogador jogador4 = new Jogador("Messi");
         Jogador jogador5 = new Jogador("Ronaldo");
+        Jogador jogador6 = new Jogador("Ronaldo Fenomeno");
 
-        Jogador[] jogadores = new Jogador[]{jogador1, jogador2, jogador3, jogador4, jogador5};
+        Jogador[] jogadores = new Jogador[]{jogador1, jogador2, jogador3, jogador4, jogador5, jogador6};
 
         // for para imprimir o array
         for (Jogador jogador : jogadores) {
