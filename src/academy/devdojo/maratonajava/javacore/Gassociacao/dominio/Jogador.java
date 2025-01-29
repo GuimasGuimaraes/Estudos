@@ -4,6 +4,7 @@ public class Jogador {
     private String nome;
     private Time time;
 
+
     public void imprimir() {
         System.out.println(this.nome);
         if (time != null){
