@@ -1,16 +1,25 @@
-package academy.devdojo.maratonajava.javacore.heranca.dominio;
+package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
 public class Pessoa {
 
     private String nome;
     private String cpf;
     private Endereco endereco;
+    private String cargo;
+
 
 
     public void imprime(){
         System.out.println(this.nome);
         System.out.println(this.cpf);
-        System.out.println(this.endereco.getRua() + " "+ this.endereco);
+
+        if (this.cargo != null) {
+            System.out.println(this.cargo);
+        } else {
+            System.out.println("Não possui cargo");
+        }
+
+        System.out.println(this.endereco.getRua() + " "+ this.endereco.getCep());
 
     }
 
@@ -36,5 +45,13 @@ public class Pessoa {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
     }
 }
