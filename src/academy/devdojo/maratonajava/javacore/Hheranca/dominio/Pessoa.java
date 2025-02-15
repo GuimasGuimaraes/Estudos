@@ -2,10 +2,10 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
 public class Pessoa {
 
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
-    private String cargo;
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco;
+    protected String cargo;
 
 
 
