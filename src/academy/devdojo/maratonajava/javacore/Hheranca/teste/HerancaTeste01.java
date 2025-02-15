@@ -20,14 +20,17 @@ public class HerancaTeste01 {
 
         Funcionario funcionario = new Funcionario();
 
-        System.out.println("Imprimindo o funcionário");
+        System.out.println("-----------------");
 
         funcionario.setNome("Guilherme");
         funcionario.setCargo("Analista de Sistemas");
         funcionario.setCpf("12732611603");
         funcionario.setEndereco(endereco);
+        funcionario.setSalario(4000);
 
         funcionario.imprime();
+
+
 
 
 

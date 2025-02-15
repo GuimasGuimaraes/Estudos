@@ -10,16 +10,12 @@ public class Pessoa {
 
 
     public void imprime(){
+
         System.out.println(this.nome);
+
         System.out.println(this.cpf);
 
-        if (this.cargo != null) {
-            System.out.println(this.cargo);
-        } else {
-            System.out.println("Não possui cargo");
-        }
-
-        System.out.println(this.endereco.getRua() + " "+ this.endereco.getCep());
+        System.out.println(this.endereco.getRua() + "\n" + this.endereco.getCep());
 
     }
 
@@ -47,11 +43,5 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
-    public String getCargo() {
-        return cargo;
-    }
 
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
-    }
 }
