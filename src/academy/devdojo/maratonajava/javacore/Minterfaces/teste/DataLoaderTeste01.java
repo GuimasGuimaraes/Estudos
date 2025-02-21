@@ -12,7 +12,11 @@ public class DataLoaderTeste01 {
         fileLoader.load();
 
         dataBaseLoader.checkPermission();
-        dataBaseLoader.checkPermission();
+
+        DataLoader.retrieveMaxDataSize();
+        DataBaseLoader.retrieveMaxDataSize();
+
+
 
     }
 }
