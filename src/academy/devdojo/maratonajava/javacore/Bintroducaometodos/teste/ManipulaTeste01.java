@@ -3,7 +3,7 @@ package academy.devdojo.maratonajava.javacore.Bintroducaometodos.teste;
 import java.awt.*;
 import java.util.Random;
 
-public class AutoMouseMover {
+public class ManipulaTeste01 {
 
     private static volatile boolean keepRunning = true; // Controle da execução
 
@@ -23,7 +23,7 @@ public class AutoMouseMover {
 
             while (keepRunning) {
                 // Obtém a posição atual do mouse
-                Point currentLocation = MouseInfo.getPointerInfo().getLocation();
+                Point currentLocation = MouseInfo.getPointerInfo( ).getLocation();
                 int currentX = (int) currentLocation.getX();
                 int currentY = (int) currentLocation.getY();
 
