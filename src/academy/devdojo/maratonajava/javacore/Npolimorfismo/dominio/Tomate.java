@@ -12,6 +12,4 @@ public class Tomate extends Produto{
     }
 
 
-
-
 }
